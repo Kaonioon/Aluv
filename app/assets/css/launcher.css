@@ -902,11 +902,11 @@ body, button {
 
 .waitingSpinner:before {
     transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
-    animation: 750ms rotateBefore infinite linear reverse;
+    animation: 300ms rotateBefore infinite ease-in reverse;
 }
 .waitingSpinner:after {
     transform: rotateX(240deg) rotateY(45deg) rotateZ(45deg);
-    animation: 750ms rotateAfter infinite linear;
+    animation: 300ms rotateAfter infinite ease-in;
 }
 .waitingSpinner:before,
 .waitingSpinner:after {
@@ -3964,5 +3964,5 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Class which is applied when the spinner image is spinning. */
 .rotating {
-    animation: rotating 10s linear infinite;
+    animation: rotating 1s ease-in-out infinite;
 }
